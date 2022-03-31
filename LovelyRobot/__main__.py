@@ -79,11 +79,11 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-LovelyRobot_IMG = "https://telegra.ph/file/a09bb2525c64301d31990.jpg"
+LovelyRobot_IMG = "hhttps://te.legra.ph/file/514087a9cebe76654ed02.jpg"
 
 PM_START_TEXT = """
-[🌈](https://telegra.ph/file/469f704f4898f10f9cf3b.jpg) ' ☞ ✰Hello... Friends ─ 「[{}]」
-Im Powerfull Management Bot And I Will Help In Managing Your Group.
+[🦋](https://te.legra.ph/file/514087a9cebe76654ed02.jpg) 'Hi there! Myself Near ─ 「[{}]」
+I'm a Powerful Group Management Bot.
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 × *Uptime:* {}
 × {} *User, Across* {} *Chats.*
@@ -92,34 +92,28 @@ Im Powerfull Management Bot And I Will Help In Managing Your Group.
 buttons = [
     [
                         InlineKeyboardButton(
-                            text="Add Lovely To Your Group",
-                            url="t.me/Lovely_Ro_bot?startgroup=true"),
+                            text="🦋 Add Me To Your Group 🦋",
+                            url="t.me/near44_bot?startgroup=true"),
                     ],
                    [
                        InlineKeyboardButton(text="[► Help ◄]", callback_data="help_back"),
-                      InlineKeyboardButton(text="About ❔", callback_data="LovelyRobot_"),
                        InlineKeyboardButton(text="[► Basic ◄]", callback_data="LovelyRobot_basichelp"),
                      
                      ],
                     [                  
                        InlineKeyboardButton(
-                             text="🚑 Support",
-                             url="https://t.me/Blaze_Support"),
+                             text="🧑‍💻 Developer",
+                             url="https://t.me/near44"),
                        InlineKeyboardButton(
-                             text="Updates 📢",
-                             url="https://t.me/The_Blaze_Network")
+                             text="👩‍💻 Manager",
+                             url="https://t.me/aishh44")
                      ],
-                    [
-                       InlineKeyboardButton(
-                          text="♻️ Source Code ♻️", url="https://github.com/Official-afk-xD/Lovely-Robot")
-
-                     ], 
     ]
 
 HELP_STRINGS = """
 *➪ MAIN COMMANDS ➪*
 
-➪ /start - `Starts me! Your probably already used this.`
+➪ /start - `Starts me! You've probably already used this.`
 ➪ /help - `Click this I ll let you know about myself!`
 ➪ /settings - `in PM: will send you your settings for all supported modules.`
 ➪ *In A Group: Will Redirect You To Pm With All That Chats Settings.*"""
@@ -127,7 +121,7 @@ HELP_STRINGS = """
 
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- @Log_afk 💕"""
+ @near44 💕"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -243,12 +237,12 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_photo(
-            LovelyRobot_IMG, caption= "Heya, Lovely Robot Here.. How can ! I help you?🙂\n<b>Haven't slept since:</b> <code>{}</code>".format(
+            LovelyRobot_IMG, caption= "Hi there.. Myself Near. How can ! I help you? \n<b>Haven't slept since:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="⛦ Support ⛦", url="t.me/UNIQUE_SOCIETY")]]
+                [[InlineKeyboardButton(text="⛦ Sensei ⛦", url="t.me/near44")]]
             ),
         )
 
@@ -383,7 +377,7 @@ def LovelyRobot_about_callback(update, context):
     if query.data == "LovelyRobot_":
         query.message.edit_text(
             text="""➪ A ᴘᴏᴡᴇʀғᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ʙᴜɪʟᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀsɪʟʏ
-            \n➪ Here's the basic help regarding use of Lovely Robot.
+            \n➪ Here's the basic help regarding use of NearBot.
             
             \n➪ Almost all modules usage defined in the help menu, checkout by sending `/help`
             \n➪ Report error/bugs click the Button""",
@@ -393,10 +387,10 @@ def LovelyRobot_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="🚑 Support", url="t.me/Blaze_Support"
+                            text="🧑‍💻 Developer", url="t.me/near44"
                         ),
                         InlineKeyboardButton(
-                            text="Updates 📢", url="t.me/the_Blaze_Network"
+                            text="👩‍💻 Manager", url="t.me/aishh44"
                         ),
                     ],
                     [InlineKeyboardButton(text="⛦ Back ⛦", callback_data="LovelyRobot_back")],
@@ -422,7 +416,7 @@ def LovelyRobot_about_callback(update, context):
             text=f"*➪ Here's basic Help regarding* *How to use Me?*"
             f"\n\n➪ Firstly Add {dispatcher.bot.first_name} to your group by pressing [here](http://t.me/{dispatcher.bot.username}?startgroup=true)\n"
             f"\n➪ After adding promote me manually with full rights for faster experience.\n"
-            f"\n➪ Than send `/admincache @Lovely_Ro_bot` in that chat to refresh admin list in My database.\n"
+            f"\n➪ Than send `/admincache @near44_bot` in that chat to refresh admin list in My database.\n"
             f"\n\n*➪All done now use below given button's to know about use!*\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
@@ -447,7 +441,7 @@ def LovelyRobot_about_callback(update, context):
     elif query.data == "LovelyRobot_admin":
         query.message.edit_text(
             text=f"*⛦➪ Let's make your group bit effective now*"
-            f"\n➪ Congragulations, ⛦ Lovely ⛦ now ready to manage your group."
+            f"\n➪ Congragulations, ⛦ Near ⛦ is now ready to manage your group."
             f"\n\n➪ *Admin Tools*"
             f"\n➪ Basic Admin tools help you to protect and powerup your group."
             f"\n➪ You can ban members, Kick members, Promote someone as admin through commands of bot."
@@ -474,20 +468,16 @@ def LovelyRobot_about_callback(update, context):
         )
     elif query.data == "LovelyRobot_support":
         query.message.edit_text(
-            text="* ⛦ Lovely support chats ⛦ *"
-            "\n➪ Join Support Group/Channel",
+            text="* ⛦ Near support chats ⛦ *"
+            "\n➪ No support chat available at the moment. We'll provide you soon.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="⛦Official AFK⛦", url="t.me/log_afk"),
-                    InlineKeyboardButton(text="⛦ Chichat ⛦", url="t.me/UNIQUE_SOCIETY"),
+                    InlineKeyboardButton(text="⛦ Developer ⛦", url="t.me/near44"),
+                    InlineKeyboardButton(text="⛦ Manager ⛦", url="t.me/aishh44"),
                  ],
-                 [
-                    InlineKeyboardButton(text="🚑 Support", url="https://t.me/Blaze_Support"),
-                    InlineKeyboardButton(text="Updates 📢", url="https://t.me/the_Blaze_Network"),
-                 ],
-                 [
+                [
                     InlineKeyboardButton(text="⛦ Back ⛦", callback_data="LovelyRobot_basichelp"),
                  
                  ]
@@ -497,19 +487,14 @@ def LovelyRobot_about_callback(update, context):
 
     elif query.data == "LovelyRobot_credit":
         query.message.edit_text(
-            text=f"⛦➪ Credis for Lovely\n"
+            text=f"⛦➪ Credits for NearBot\n"
             "\n➪ Here Developers Making And Give Inspiration For Made The Lovely Robot",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="⛦ Harsh ", url="https://t.me/harsh_Pandit_xd"),
-                    InlineKeyboardButton(text="Evil Boy ⛦", url="https://t.me/EVIL_xd_boy"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="⛦ LOG AFK", url="https://t.me/LOG_AFK"),
-                    InlineKeyboardButton(text="Official AFK ⛦", url="https://t.me/Log_Afk_xD"),                
-                 ],
+                    InlineKeyboardButton(text="⛦ Developer ⛦", url="https://t.me/near44"),
+                 ]
                  [
                     InlineKeyboardButton(text="⛦ Back ⛦", callback_data="LovelyRobot_"),
                  ]
@@ -521,8 +506,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text="""⛦➪ Hi..🙂 I'm *LovelyRobot*
-                 \n➪ Here is the [⛦ Source Code ⛦](https://github.com/Official-afk-xD/Lovely-Robot) .""",
+            text="""⛦➪ Hi..🙂 Myself *Near*
+                 \n➪ Private source code. Contact owner for more info. [⛦ Source Code ⛦](https://t.me/near44) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -775,7 +760,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 2091736526 and DONATION_LINK:
+        if OWNER_ID != 5126276038 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
@@ -823,10 +808,10 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[Heya, I am Alive 🙂]", parse_mode=ParseMode.MARKDOWN) 
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[Heya!, I am Alive 🙂]", parse_mode=ParseMode.MARKDOWN) 
         except Unauthorized:
             LOGGER.warning(
-                "Bot isnt able to send message to support_chat, go and check!"
+                "Bot isn't able to send message to support_chat, go and check!"
             )
         except BadRequest as e:
             LOGGER.warning(e.message)
